@@ -28,7 +28,25 @@ class Airplane():
     def get_time(self):
         '''This function is used to return time'''
         return self.time
+    def time_to_reached(self):
+        '''this function calculate time using distance and speed
+        then store them into object variable time'''
+        self.time= self.distance/self.speed
+    def set_color(self,color):
+        ''' This function is used to set the color'''
+        self.color=color
+    def set_engine(self, engine):
+        ''' This function is used to set the engine'''
+        # self.engine=engine
+
+    def set_door(self, door):
+        self.door=door
+    def set_speed(self, speed):
+        self.speed=speed
+
+
 
 
 obj = Airplane("white",400,1200,2,8000) #Create the object of plane and initiallizing it
+obj.time_to_reached() 
 obj.show_time() #This is used to show or output time
